@@ -24,10 +24,9 @@ public class Library {
             System.out.println(book.getNameBook() + " - " + book.getNumberPages());
         }
         System.out.println("Cycle name book");
-        for (int i = 0; i < books.length; i++) {
-            Book book = books[i];
-            if (book == cleanCode) {
-                System.out.println(book.getNameBook() + " - " + book.getNumberPages());
+        for (Book book : books) {
+            if (book.getNameBook().equals("Clean code")) {
+                System.out.println(book.getNameBook() + ", " + book.getNumberPages() + " pages");
             }
         }
     }
